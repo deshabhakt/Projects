@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="bt_convert">convert</string>
+    <string name="description_flag_of_first_country">Flag of First country</string>
+    <string name="description_flag_of_second_country">Flag of second country</string>
+    <string name="bt_reset">reset</string>
+    <string name="hint_country_1_input">Enter a Number</string>
+    <string name="bt_swap">swap</string>
+    <string name="swap_logo_image">swap logo</string>
+    <string name="main_logo">main logo</string>
+    <string name="about_button">About</string>
+    <string name="exit_button">Exit</string>
+    <string name="todo">TODO</string>
+    <string name="bt_github">Button</string>
+
+</resources>

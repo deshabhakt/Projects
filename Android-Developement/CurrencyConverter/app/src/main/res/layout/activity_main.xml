@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_activity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/country_1_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9"
+        app:srcCompat="@drawable/flag_afghanistan" />
+
+    <ImageView
+        android:id="@+id/country_2_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/country_1_image"
+        app:layout_constraintStart_toStartOf="@+id/country_1_image"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/flag_afghanistan" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinner_country_1"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="3dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/bg_spinner_country"
+        android:dropDownHeight="50sp"
+        android:dropDownVerticalOffset="90dp"
+        android:popupBackground="@drawable/bg_spinner_popdown_window"
+        app:layout_constraintBottom_toBottomOf="@+id/country_1_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintStart_toEndOf="@+id/country_1_image"
+        app:layout_constraintTop_toTopOf="@+id/country_1_image"
+        app:layout_constraintVertical_bias="0"
+        tools:ignore="RtlHardcoded" />
+
+    <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+        android:id="@+id/spinner_country_2"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="3dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:background="@drawable/bg_spinner_country"
+        android:dropDownHeight="50sp"
+        android:dropDownVerticalOffset="90dp"
+        android:popupBackground="@drawable/bg_spinner_popdown_window"
+        app:layout_constraintBottom_toBottomOf="@+id/country_2_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/country_2_image"
+        app:layout_constraintTop_toTopOf="@+id/country_2_image"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlHardcoded" />
+
+    <EditText
+        android:id="@+id/country_1_input"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="3dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:gravity="center|end"
+        android:hint="@string/hint_country_1_input"
+        android:includeFontPadding="true"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/country_1_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/country_1_image"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_country_1"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="LabelFor" />
+
+    <EditText
+        android:id="@+id/country_2_input"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_margin="3dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:autofillHints=""
+        android:background="@drawable/bg_edit_text"
+        android:ems="10"
+        android:gravity="center|end"
+        android:hint="@string/hint_country_1_input"
+        android:includeFontPadding="true"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:paddingEnd="5dp"
+        android:paddingRight="5dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/country_2_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/country_2_image"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_country_2"
+        app:layout_constraintVertical_bias="0.9"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/bt_swap"
+        android:layout_width="88dp"
+        android:layout_height="74dp"
+        android:background="@drawable/ic_swap_logo"
+        android:hapticFeedbackEnabled="true"
+        app:backgroundTint="#00FFFFFF"
+        app:backgroundTintMode="src_atop"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.418" />
+
+    <Button
+        android:id="@+id/bt_reset"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="15dp"
+        android:onClick="calculate"
+        android:text="@string/bt_reset"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1680B1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.229"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="OnClick,UsingOnClickInXml"
+        android:layout_marginStart="15dp" />
+
+
+    <Button
+        android:id="@+id/bt_convert"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:onClick="calculate"
+        android:text="@string/bt_convert"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#F80B0B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#1680B1"
+
+        app:layout_constraintBaseline_toBaselineOf="@+id/bt_reset"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/main_logo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/main_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_reset"
+        app:srcCompat="@drawable/logo"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

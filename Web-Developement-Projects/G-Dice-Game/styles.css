@@ -1,0 +1,44 @@
+body{
+  text-align: center;
+  background-color:rgb(216, 200, 190);
+}
+@media screen and (max-width:750px) {
+  h1{
+    font-size: 7rem;
+  }
+}
+#result{
+  font-size: 5rem;
+  margin-top: 0%;
+  margin-bottom: 2.5%;
+  font-style: italic;
+  color: rgb(147, 15, 235);
+}
+h1{
+  margin: 0;
+}
+table{
+  margin: 0 auto;
+}
+
+td{
+  padding: 15px;
+  font-size: 2rem;
+  color: rgb(77, 105, 86);
+}
+img{
+  width: 175px;
+}
+button{
+    font-size: 3rem;
+    border-radius: 20px;
+    padding: 10px 50px;
+    color: darkgreen;
+    background-color: transparent;
+    margin:2% auto 1%;
+}
+
+footer{
+  margin: 1% auto 0;
+  color:rgb(32, 34, 36);
+}

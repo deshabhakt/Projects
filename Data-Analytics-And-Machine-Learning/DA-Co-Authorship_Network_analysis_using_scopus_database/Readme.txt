@@ -1,4 +1,4 @@
-﻿ The task is to create and analyze Co-Authorship network using Scopus or Web of
+﻿The task is to create and analyze Co-Authorship network using Scopus or Web of
 science databases.
 
 For a selected keyword or a combination of key words (List of keywords are given below),

@@ -1,0 +1,38 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  height: 300px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: auto;
+  justify-content: center;
+  align-content: center;
+  /* text-align: center;  */
+}
+#title_score{
+  float:inline-start;
+    margin-top: 3%;
+    margin-left: 450px;
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+#title_moves{
+    float:inline-end;
+    margin-top: 3%;
+    margin-right: 430px;
+    font-size: 30px;
+    padding-bottom: 2%;
+}
+#GameName{
+  text-align: center;
+    color: green;
+    font-size: 40px;
+}
+#Output{
+  padding-top: 2%;
+  text-align: center;
+  font-size: 30px;
+}
+

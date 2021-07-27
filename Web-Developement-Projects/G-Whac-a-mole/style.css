@@ -1,0 +1,50 @@
+#game-title{
+    text-align: center;
+    color: green;
+    font-size: 35px;
+}
+#score-title{
+    float:inline-start;
+    margin-top: 8px;
+    margin-left: 350px;
+    font-size: 20px;
+}
+#time-title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+}
+#speed-title{
+    float:inline-end;
+    margin-top: 8px;
+    margin-right: 370px;
+    font-size: 20px;
+}
+
+#output{
+    text-align: center;
+    padding-top: 2%;
+}
+.square{
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color:darkmagenta;
+}
+
+.grid{
+    width: 398px;
+    height: 398px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mole{
+    background-image: url('mole.jpg');
+    background-size: cover;
+}
